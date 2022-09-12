@@ -15,6 +15,7 @@
 // 
 // Contributed by: Patrick Oppel (patrick.oppel94@gmail.com)
 // 
+//
 // Comments generated in parts with GPT-3 (see disclaimer in README)
 
 use serde::*;
