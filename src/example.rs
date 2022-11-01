@@ -247,7 +247,9 @@ impl ExampleStruct {
 
         match self.i2c_connection.transfer(command, rx_len, delay) {
             Ok(x) => {
+                println!("cmd val =  {}", cmd);
                 if x[0] == cmd {
+                    println!("returned byte val: {}", x[0]);
                     Ok(())
                 } else {
                     Err(ExampleError::I2CSet)
